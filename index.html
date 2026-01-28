@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Normativa Agrio RP 🍊</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #ff8c00;
+            --dark: #121212;
+            --bg: #f4f4f4;
+            --white: #ffffff;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+
+        body { background-color: var(--bg); color: #333; }
+
+        header {
+            background: linear-gradient(135deg, #000, #333);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            border-bottom: 5px solid var(--primary);
+        }
+
+        header h1 { font-size: 2.5rem; letter-spacing: 2px; }
+        header p { color: var(--primary); font-style: italic; }
+
+        .container { max-width: 900px; margin: 30px auto; padding: 0 20px; }
+
+        .intro {
+            background: var(--white);
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 5px solid var(--primary);
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        /* ESTILO DEL ACORDEÓN */
+        .norm-section { margin-bottom: 10px; }
+
+        .norm-header {
+            background: var(--dark);
+            color: white;
+            padding: 15px 20px;
+            width: 100%;
+            text-align: left;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1.1rem;
+            font-weight: 600;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: 0.3s;
+        }
+
+        .norm-header:hover { background: #222; border-left: 5px solid var(--primary); }
+
+        .norm-content {
+            background: white;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            border-radius: 0 0 8px 8px;
+        }
+
+        .inner-text { padding: 25px; border: 1px solid #ddd; border-top: none; }
+
+        /* TABLAS */
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 0.9rem; }
+        th, td { padding: 12px; border: 1px solid #ddd; text-align: left; }
+        th { background: var(--primary); color: white; }
+        tr:nth-child(even) { background: #f9f9f9; }
+
+        .important { color: #d9534f; font-weight: bold; }
+        ul { margin-left: 20px; margin-bottom: 15px; }
+        li { margin-bottom: 8px; }
+
+        footer { text-align: center; padding: 40px; color: #777; font-size: 0.8rem; }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>AGRIO RP 🍊</h1>
+    <p>Normativa General de Convivencia y Rol</p>
+</header>
+
+<div class="container">
+    <div class="intro">
+        <strong>📌 INFORMACIÓN GENERAL:</strong><br>
+        Garantizar una experiencia de rol seria, realista y justa. La interpretación de estas normas corresponde exclusivamente al staff. El desconocimiento no exime de su cumplimiento.
+    </div>
+
+    <div class="norm-section">
+        <button class="norm-header">1. Conceptos Básicos (IC, OOC, NVL) <span>+</span></button>
+        <div class="norm-content">
+            <div class="inner-text">
+                <h3>IC y OOC</h3>
+                <ul>
+                    <li><strong>IC (In Character):</strong> Todo lo que ocurre dentro del rol del personaje.</li>
+                    <li><strong>OOC (Out Of Character):</strong> Todo lo que sucede fuera del rol. Prohibido mezclar información OOC en IC.</li>
+                </ul>
+                <h3>Valorar Vida (NVL)</h3>
+                <p>La vida del personaje debe ser protegida en todo momento. Bajo amenaza directa y sin salida lógica, debes rendirte. No usar radio o teléfono si te apuntan.</p>
+                <br>
+                <h3>Comandos Principales</h3>
+                <p><code>/me</code> Acciones | <code>/do</code> Entorno | <code>/anon</code> Anónimo | <code>/report</code> Staff</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="norm-section">
+        <button class="norm-header">2. Faltas y Comportamiento <span>+</span></button>
+        <div class="norm-content">
+            <div class="inner-text">
+                <ul>
+                    <li><strong>Forzar Rol:</strong> Imponer acciones ignorando la lógica o buscando beneficio propio.</li>
+                    <li><strong>Evadir Rol:</strong> Cortar un rol forzadamente. Salirse del juego será sancionado.</li>
+                    <li><strong>Intervención:</strong> Prohibido intervenir en roles ajenos que no te involucren.</li>
+                    <li><strong>Metagaming (MG):</strong> Info OOC para beneficio IC.</li>
+                    <li><strong>Powergaming (PG):</strong> Acciones irreales (Bunny jump, conducir coches destrozados).</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="norm-section">
+        <button class="norm-header">3. Muerte del Personaje (PK y CK) <span>+</span></button>
+        <div class="norm-content">
+            <div class="inner-text">
+                <p><strong>PK:</strong> Inconsciencia con pérdida de memoria del rol inmediato.</p>
+                <p><strong>CK:</strong> Muerte definitiva. Pérdida de bienes, dinero y recuerdos.</p>
+                <br>
+                <h4>Tipos de CK:</h4>
+                <ul>
+                    <li><strong>CK-V:</strong> Voluntario (cada 30 días, sin multas pendientes).</li>
+                    <li><strong>CK Policial:</strong> 1000+ drogas, $500k dinero negro o 1000 min jail.</li>
+                    <li><strong>CK Banda:</strong> DNI tomado 5 veces o tortura grabada.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="norm-section">
+        <button class="norm-header">4. Tabla de Actos Ilegales <span>+</span></button>
+        <div class="norm-content">
+            <div class="inner-text">
+                <table>
+                    <tr><th>Tipo de Robo</th><th>Policía Mínima</th><th>Participantes</th></tr>
+                    <tr><td>Robo a civil</td><td>2</td><td>1 - 5</td></tr>
+                    <tr><td>Secuestro a civil</td><td>4</td><td>1 - 5</td></tr>
+                    <tr><td>Robo a Licorería/Badu</td><td>4</td><td>2 + 1 tirador</td></tr>
+                    <tr><td>Joyería</td><td>5</td><td>3 + 1 tirador</td></tr>
+                    <tr><td>Banco Central</td><td>12 - 14</td><td>9 - 11 + 1 tirador</td></tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="norm-section">
+        <button class="norm-header">5. Normativa de Pare <span>+</span></button>
+        <div class="norm-content">
+            <div class="inner-text">
+                <ul>
+                    <li>Tiempo entre pares: 10 a 15 segundos.</li>
+                    <li>No chocar ni pinchar hasta el <strong>tercer pare</strong>.</li>
+                    <li>Si el atracado dispara primero, se puede pinchar sin esperar los 3 pares.</li>
+                    <li>Prohibido robar DNI en atracos (salvo si no valora vida).</li>
+                    <li><strong>Norte:</strong> Se pueden realizar robos sin policía mínima respetando las reglas.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="norm-section">
+        <button class="norm-header">6. Secuestros y Refuerzos <span>+</span></button>
+        <div class="norm-content">
+            <div class="inner-text">
+                <p><strong>Secuestros:</strong> Exclusivo de Bandas/Mafias. Máximo 30 minutos.</p>
+                <p><strong>Negociaciones:</strong> Se puede pedir borrar historial criminal según el rango del policía secuestrado.</p>
+                <p><strong>Refuerzos:</strong> Exclusivo para Bandas y Mafias con vestimenta de facción.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="norm-section">
+        <button class="norm-header">7. Zonas Seguras <span>+</span></button>
+        <div class="norm-content">
+            <div class="inner-text">
+                <p>Comisarías, Hospitales, Spawn, Mecánicos, Garajes, Tiendas Interiores, Mercado Negro, Prisión, Autoescuela, Hoteles, Observatorio.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="intro" style="margin-top: 20px; text-align: center;">
+        ✅ Al hacer la Whitelist, firmas un contrato de calidad. Si no estás dispuesto a perder, el rol serio no es para ti.
+    </div>
+</div>
+
+<footer>
+    &copy; 2026 Agrio RP - Todos los derechos reservados.
+</footer>
+
+<script>
+    
+    const acc = document.getElementsByClassName("norm-header");
+    for (let i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            const panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+                panel.style.maxHeight = null;
+                this.querySelector('span').innerText = "+";
+            } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+                this.querySelector('span').innerText = "-";
+            }
+        });
+    }
+</script>
+
+</body>
+</html>
